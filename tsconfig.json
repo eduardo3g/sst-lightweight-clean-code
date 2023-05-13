@@ -1,4 +1,37 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
-  "exclude": ["packages"]
+  "exclude": [
+    "packages"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@errors/*": [
+        "./clean-sounds/stateless/src/errors/*"
+      ],
+      "@packages/*": [
+        "./clean-sounds/stateless/src/packages/*"
+      ],
+      "@dto/*": [
+        "./clean-sounds/stateless/src/dto/*"
+      ],
+      "@use-cases/*": [
+        "./clean-sounds/stateless/src/use-cases/*"
+      ],
+      "@adapters/*": [
+        "./clean-sounds/stateless/src/adapters/*"
+      ],
+      "@shared/*": [
+        "./clean-sounds/stateless/src/shared/*"
+      ],
+      "@config/*": [
+        "./clean-sounds/stateless/src/config/*"
+      ],
+      "@events/*": [
+        "./clean-sounds/stateless/src/events/*"
+      ],
+      "@schemas/*": [
+        "./clean-sounds/stateless/src/schemas/*"
+      ]
+    }
+  }
 }
